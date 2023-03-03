@@ -18,6 +18,17 @@
     <title>WebStudio</title>
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="inside-modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-svg"  >
+                  <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+        </button>
+
+      </div>
+
+    </div>
     <div class="container-header">
       <div class="section">
         <header class="header">
@@ -28,13 +39,13 @@
           </h2>
           <nav>
             <ul class="unstyled-list navigation-list">
-              <li>
+              <li class="left-navigation-item">
                 <a class="navigation-item" href="index.html">Studio</a>
               </li>
-              <li>
+              <li class="left-navigation-item">
                 <a class="navigation-item" href="portofolio.html">Portofolio</a>
               </li>
-              <li>
+              <li lass="left-navigation-item">
                 <a class="navigation-item" href="contacts.html">Contacts</a>
               </li>
            </ul>
@@ -67,7 +78,7 @@
               EFFECTIVE SOLUTIONS FOR <br />
               YOUR BUSINESS
             </h1>
-            <button class="main-button">Request our service</button>
+            <button data-modal-open class="main-button">Request our service</button>
           </section>
         </div>
       </div>
@@ -157,6 +168,7 @@
                   src="images/comp3.jpg"
                   alt="comp1"
                 />
+                <div class="name-apps"> DESKTOP APPS</div>
               </li>
               <li>
                 <img
@@ -166,6 +178,7 @@
                  
                   alt="comp2"
                 />
+                 <div class="name-apps"> MOBILE APPS</div>
               </li>
               <li>
                 <img
@@ -174,6 +187,7 @@
                   src="images/comp.jpg"
                   alt="comp3"
                 />
+                 <div class="name-apps"> DESIGN SOLUTIONS</div>
               </li>
             </ul>
           </section>
@@ -199,7 +213,6 @@
                       <li class="icon-item">
                         <a href="">
                            <svg class="item-svg" width="20" height="20">
->
                             <use href="images/icons.svg#icon-instagram"></use>
                           </svg>
                         </a>
@@ -486,5 +499,6 @@
         </footer>
       </div>
     </div>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
